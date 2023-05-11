@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mamun Express</title>
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar starts here  -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav__upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              src="./images/profile.jpg"
+              class="profile__icon"
+              alt="profile"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <!-- nav lower starts here  -->
+
+      <ul class="nav__lower flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link nav__brand">Mamun Express</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link"
+            ><span
+              ><i class="fa-solid fa-shopping-cart"></i>Cart 2 products -
+              $124.40</span
+            ></a
+          >
+        </li>
+      </ul>
+      <!-- nav lower ends here  -->
+    </nav>
+    <!-- navbar ends here  -->
+
+    <!-- Header section starts here  -->
+    <header class="header">
+      <div class="banner flex-space-around">
+        <marquee behavior="" direction="" class="banner__tile"
+          >50% sales going on</marquee
+        >
+
+        <div class="features flex-space-around">
+          <article class="feature flex-center">
+            <i class="fa-solid fa-truck-fast feature__icon"></i>
+            <h3>Shipping within 7 days</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-brands fa-rocketchat feature__icon"></i>
+            <h3>Support 24/7</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-regular fa-credit-card feature__icon"></i>
+            <h3>Safe Payment</h3>
+          </article>
+        </div>
+      </div>
+    </header>
+    <!-- Header section ends here  -->
+
+    <main class="flex-center">
+      <div class="sidebar">
+        <section class="categories-section">
+          <h3 class="section-title">Categories</h3>
+          <ul class="list">
+            <li class="list-item">
+              <label for="telephone">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="telephone"
+                  value="telephones"
+                />
+                Telephones
+              </label>
+            </li>
+            <li class="list-item">
+              <label for="tablet">
+                <input type="checkbox" name="" id="telephone" value="tablets" />
+                Tablets
+              </label>
+            </li>
+            <li class="list-item">
+              <label for="televisions">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="televisions"
+                  value="televisions"
+                />
+                Televisions
+              </label>
+            </li>
+            <li class="list-item">
+              <label for="computers">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="computers"
+                  value="computers"
+                />
+                Computers
+              </label>
+            </li>
+            <li class="list-item">
+              <label for="headphones">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="headphones"
+                  value="headphones"
+                />
+                Headphones
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="price-section">
+          <h3 class="section-title">Price Range</h3>
+          <ul class="list">
+            <li class="list-item">
+              <label for="price1">
+                <input type="radio" name="price" id="price1" value="[0,20]" />
+                $0-$20
+              </label>
+            </li>
+            <li class="list-item">
+              <label for="price2">
+                <input type="radio" name="price" id="price2" value="[21,50]" />
+                $21-$50
+              </label>
+            </li>
+            <li class="list-item">
+              <label for="price3">
+                <input type="radio" name="price" id="price3" value="[51,100]" />
+                $51-$100
+              </label>
+            </li>
+            <li class="list-item">
+              <label for="price4">
+                <input type="radio" name="price" id="price4" value="[101+]" />
+                $101+
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="shipping-section">
+          <h3 class="section-title">Shipping options</h3>
+          <ul class="list">
+            <li class="list-item">
+              <label for="free">
+                <input type="radio" name="shipping" id="free" value="free" />
+                Free
+              </label>
+            </li>
+            <li class="list-item">
+              <label for="paid">
+                <input type="radio" name="shipping" id="paid" value="paid" />
+                Paid
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="main-content">
+        <section class="actions flex-space-around">
+          <div class="actions__sort">
+            <label for="sort">Sort By:</label>
+            <select name="sort" id="sort">
+              <option value="sold">Most sold first</option>
+              <option value="ratting">Most rated first</option>
+              <option value="price">Cheapest first</option>
+              <option value="arrival">Newest first</option>
+              <option value="discount">Biggest discount first</option>
+            </select>
+          </div>
+          <div class="actions__search">
+            <input type="text" placeholder="search your products" />
+            <button class="btn">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- product section start here  -->
+
+        <section class="products">
+          <article class="product card">
+            <div class="badge">
+              <span>5 in stock</span>
+              <hr class="hr-design" />
+              <span>3 sold</span>
+            </div>
+            <img src="./images/product1.jpg" alt="product1" />
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphones</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__descriptions">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, nobis...
+                <a href="./product.html" class="learn-more">Learn more</a>
+              </p>
+              <h4 class="product__price">$225.99</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>2 in stock</span>
+              <hr class="hr-design" />
+              <span>9 sold</span>
+            </div>
+            <img src="./images/product2.jpg" alt="product1" />
+
+            <div class="product__body">
+              <h3 class="product__name">Apple smart watch</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__descriptions">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, nobis...
+                <a href="./product.html" class="learn-more">Learn more</a>
+              </p>
+              <h4 class="product__price">$125.99</h4>
+              <p class="product__rating">Rating: 4.2/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>4 in stock</span>
+              <hr class="hr-design" />
+              <span>7 sold</span>
+            </div>
+            <img src="./images/product3.jpg" alt="product1" />
+
+            <div class="product__body">
+              <h3 class="product__name">Apple sun glass</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__descriptions">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, nobis...
+                <a href="./product.html" class="learn-more">Learn more</a>
+              </p>
+              <h4 class="product__price">$75.99</h4>
+              <p class="product__rating">Rating: 3.5/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>8 in stock</span>
+              <hr class="hr-design" />
+              <span>16 sold</span>
+            </div>
+            <img src="./images/product4.jpg" alt="product1" />
+
+            <div class="product__body">
+              <h3 class="product__name">Apple mobile phone</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__descriptions">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, nobis...
+                <a href="./product.html" class="learn-more">Learn more</a>
+              </p>
+              <h4 class="product__price">$565.99</h4>
+              <p class="product__rating">Rating: 4.8/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>7 in stock</span>
+              <hr class="hr-design" />
+              <span>20 sold</span>
+            </div>
+            <img src="./images/product5.jpg" alt="product1" />
+
+            <div class="product__body">
+              <h3 class="product__name">Dell laptop</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__descriptions">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, nobis...
+                <a href="./product.html" class="learn-more">Learn more</a>
+              </p>
+              <h4 class="product__price">$785.99</h4>
+              <p class="product__rating">Rating: 4.1/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+          <article class="product card">
+            <div class="badge">
+              <span>23 in stock</span>
+              <hr class="hr-design" />
+              <span>45 sold</span>
+            </div>
+            <img src="./images/product6.jpg" alt="product1" />
+
+            <div class="product__body">
+              <h3 class="product__name">Apple Monitor</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+              <p class="product__descriptions">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia, nobis...
+                <a href="./product.html" class="learn-more">Learn more</a>
+              </p>
+              <h4 class="product__price">$325.99</h4>
+              <p class="product__rating">Rating: 4.3/5</p>
+              <button class="btn product__btn">Add to cart</button>
+            </div>
+          </article>
+        </section>
+        <!-- product section ends here  -->
+
+        <!-- pagination starts here  -->
+        <div class="pagination">
+          <button class="btn pagination__btn">
+            <i class="fab fa-less-than"></i>
+            <button class="btn pagination__btn">2</button>
+            <button class="btn pagination__btn">3</button>
+            <button class="btn pagination__btn">4</button>
+            <button class="btn pagination__btn">5</button>
+            <button class="btn pagination__btn">6</button>
+            <button class="btn pagination__btn">7</button>
+            <button class="btn pagination__btn">8</button>
+            <button class="btn pagination__btn">9</button>
+            <button class="btn pagination__btn">10</button>
+            <button class="btn pagination__btn">...</button>
+            <button class="btn pagination__btn">50</button>
+          </button>
+          <button class="btn pagination__btn">
+            <i class="fab fa-greater-than"></i>
+          </button>
+        </div>
+        <!-- pagination ends here  -->
+      </div>
+    </main>
+
+    <footer class="footer flex-space-around">
+      <div>
+        <label for="subscribe">Subscribe to newsletter: </label>
+        <input
+          name="subscribe"
+          placeholder="Your Email Address"
+          type="email"
+          id="subscribe"
+          class="footer__input"
+        />
+        <button class="btn btn-subscribe">Subscribe</button>
+      </div>
+      <div>
+        <p>&copy; Copyright 2023 Mamun Express. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
