@@ -532,6 +532,11 @@ footer {
   .contact-address {
     width: 100%;
   }
+  .product__details {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+  }
 }
 
 @media (max-width: 768px) {
