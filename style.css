@@ -84,7 +84,7 @@ img {
 .text-center {
   text-align: center;
 }
-/* reset common code ends here  */
+/* reset common code ends here ...................... */
 
 /* navbar section style start here  */
 #menu-icon {
@@ -136,13 +136,13 @@ nav {
 .nav__brand {
   font-size: 2rem;
 }
-/* navbar section style start here  */
+/* navbar section style start here ...................... */
 
 /* header style starts here  */
 .header {
   padding: 4rem 0;
   height: 80vh;
-  background: url("./images/banner.jpg") no-repeat center;
+  background: url("./images/banner.webp") no-repeat center;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -177,7 +177,7 @@ nav {
 .feature__icon {
   font-size: 3rem;
 }
-/* header style ends here  */
+/* header style ends here ...................... */
 
 /* main section starts here  */
 main {
@@ -258,7 +258,7 @@ main {
   text-align: center;
   border-radius: 5px;
 }
-/* products section style ends here  */
+/* products section style ends here ...................... */
 
 /* pagination starts here  */
 .pagination {
@@ -274,7 +274,7 @@ main {
   border-width: 1px 1px 1px 1px;
   border-style: solid;
 }
-/* pagination ends here  */
+/* pagination ends here ...................... */
 
 /* product details starts here  */
 .product-details-left {
@@ -290,7 +290,7 @@ main {
   height: 20rem;
   width: 30rem;
 }
-/* product details ends here  */
+/* product details ends here ...................... */
 
 /* cart style starts here  */
 .cart {
@@ -317,6 +317,7 @@ main {
   flex: 0.2;
   width: 15rem;
   height: 10rem;
+  padding-right: 0.8rem;
 }
 .cart__item-description {
   flex: 0.4;
@@ -358,7 +359,7 @@ main {
   align-items: center;
   gap: 1rem;
 }
-/* cart style ends here  */
+/* cart style ends here ...................... */
 
 /* profile style starts here  */
 .profile {
@@ -379,7 +380,7 @@ main {
 .profile__buttons button {
   background-color: transparent;
 }
-/* profile style starts here  */
+/* profile style ends here ...................... */
 
 /* Register style starts here  */
 .form {
@@ -422,7 +423,7 @@ textarea {
   gap: 3rem;
   min-height: 60vh;
 }
-/* Register style ends here  */
+/* Register style ends here ...................... */
 
 /* Contact style starts here  */
 .contact-section {
@@ -440,9 +441,9 @@ textarea {
 .contact-map {
   width: 80%;
 }
-/* Contact style ends here  */
+/* Contact style ends here ...................... */
 
-/* main section ends here  */
+/* main section ends here ...................... */
 
 /* footer section style starts here  */
 footer {
@@ -473,7 +474,8 @@ footer {
   padding: var(--padding);
   width: 20rem;
 }
-/* footer section style ends here  */
+/* footer section style ends here ...................... */
+
 /* responsiveness starts here  */
 @media (max-width: 992px) {
   main {
@@ -537,4 +539,4 @@ footer {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
-/* responsiveness ends here  */
+/* responsiveness ends here ...................... */
